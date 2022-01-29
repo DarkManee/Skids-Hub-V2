@@ -9212,7 +9212,7 @@ plr.Chatted:connect(function(message)
         end
          
     end
-    if message:sub(1,4) == "%tpa" then
+    if message:sub(1,4) == ">tpa" then
         
     local args = message:split(" ")
     
@@ -9514,10 +9514,10 @@ game.Players.LocalPlayer.Character["Right Arm"]:ClearAllChildren()
 							local PRX = math.rad(sp2)
 						 	local PRZ = math.rad(Spin)
                             local Distance = math.round(Visualizer[1].Handle.Sound.PlaybackLoudness)/89 + 2
-                            local Position = CFrame.new(Root.Position) * CFrame.Angles(PRX,PRY,PRZ) * CFrame.new(1.5,2.3,Distance).Position
-                            v.Handle.CFrame = CFrame.new(Position, Root.Position + Vector3.new(0, 0, 2))
+                            local Position = CFrame.new(Root.Position) * CFrame.Angles(PRX,PRY,PRZ) * CFrame.new(0.0,0.0,Distance).Position
+                            v.Handle.CFrame = CFrame.new(Position, Root.Position + Vector3.new(1, 8, 0))
                             v.Handle.Velocity = Vector3.new(-29.99999995, 0, 0)
-                            Spin = Spin + 0.7
+                            Spin = Spin + 1.5
                         game.RunService.RenderStepped:wait()
                     until Spin >= 360
                 until not game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool")
