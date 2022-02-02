@@ -9135,7 +9135,6 @@ print("                                                                         
 
 
 
-
 local plr = game:GetService("Players").LocalPlayer
 local charr = game:GetService("Players").LocalPlayer.Character
 local players = game:GetService("Players"):GetPlayers()
